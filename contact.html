@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang ="en">
+    <head>
+        <title>Contact Us</title>
+        <link rel = "stylesheet" href = "style.css">
+    </head>
+    <body>
+        <div class = "verticalAlignParent">
+            <nav class = "navigationBar">
+                <img src = "silicontech_bbs_logo.jpeg" alt = "logo" class = "imageDim verticalAlignTextBottom">
+                <b>Silicon University</b>
+                <a href = "contact.html" target ="_self" id = "contact">Contact Us</a>
+            </nav>
+        </div>
+        <hr>
+        <br /><br /><br />
+        <div class = "text3">
+            <hr>
+            <br>
+            We are here to answer any questions you may have about Silicon.<br>
+            For any queries reach out to us and we'll respond as soon as we can. <br><br>
+            email : info@silicon.ac.in<br>
+            web : www.silicon.ac.in<br>
+            <br>
+            <hr>
+        </div>
+        <br />
+        <h2>Form :- </h2>
+        <form action = "javascript:submitform()" onSubmit = "return validate()">
+            <label for = "name" class = "text4">Name : </label>
+            <input type = "text" name = "name" id = "name" class = "text4" required><br /><br />
+            <label for = "email" class = "text4">Email : </label>
+            <input type="text" name = "email" id = "email" class = "text4" required><br /><br />
+            <label for = "genre" class = "text4">Favourite Genre : </label>
+            <input list = "genre" class = "text4" required> <br /><br />
+            <datalist id = "genre">
+                <option value = "B-TECH"></option>
+                <option value = "M-TECH"></option>
+                <option value = "MSE"></option>
+                <option value = "BSC"></option>
+            </datalist>
+            <br />
+            <input type = "checkbox" name = "checkbox" id = "checkbox" class = "text4">
+            <label for = "checkbox" class = "text4">Subscribe to our Newsletter via Email</label>
+            <br /><br />
+            <input type = "submit" name = "submit" value = "Submit" class = "text4"><br /><br />
+        </form>
+        <script>
+             function validate()
+            {
+                return true;
+            }
+            function submitform()
+            {
+                window.alert("Form submitted");
+            }
+        </script>
+        <hr>
+        <p class="footer">All rights reserved</p>
+    </body>
+</html>
